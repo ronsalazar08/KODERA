@@ -1,0 +1,307 @@
+body {
+    font-family: Piboto;
+}
+
+#logo {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 200px;
+    margin-top: -250px;
+    margin-left: -350px;
+    background-image: url("YTL.png");
+    //background-color: rgba(255,255,255,0.5);
+    //opacity: .5;
+    //background-blend-mode: lighten;
+    transform:scale(0.5);
+}
+
+.bg { 
+    /* The image used */
+    background-image: url("CTA.png");
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+    /* Full height */
+    //height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 110% 110%;
+}
+#Label{
+    /*
+    color: red;
+    text-align: center;
+    font-size: 80px;
+    */
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background: blue;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.3em;
+    border: 2px dashed #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #0038FF, 2px 1px 6px 4px rgba(0, 10, 10, 0.5);
+    text-shadow: -1px -1px #3044AA;
+    font-weight: bold;
+    position: sticky;
+    top: 2px;
+}
+#title{
+    position: absolute;
+    border: solid 2px black;
+    font-size: 180px;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 220px;
+    margin-top: -110px;
+    margin-left: -400px;
+    text-align: center;
+    font-family: "Linux Biolinum Keyboard O";
+    font-weight: normal;
+    //opacity: 0.2;
+    pointer-events: none;
+}
+
+
+input[type=text] {
+    width: 500px;
+    height: 50px;
+    padding: 8px 20px; 
+    color:Red; 
+    border: 2px solid Blue;
+    font-family: "Verdana";
+    font-size: 24px;
+    text-align:center;
+}
+input[type=text]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.select-style {
+    width: 500px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.select-style select {
+    width: 500px;
+	height: 50px;
+    padding: 8px 20px;
+    color:white; 
+    cursor:pointer;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    border: 2px solid white;
+    background-color:blue;
+    font-family: "Verdana";
+    font-size: 20px
+}
+.select-style select:focus {
+    outline: none;
+}
+
+.select-style select:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid blue;
+}
+
+.cntr{
+	text-align-last:center;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+/*TABLES*/
+
+/*end TABLES*/
+ 
+ 
+ 
+/*menu BUTTONS class*/
+.btnHomeBar {
+  position: absolute;
+  left: -10px;
+  text-align: center;
+  box-sizing: border-box;
+  //appearance: none;
+  background-color: transparent;
+  border: 2px solid blue;
+  border-radius: 0.6em;
+  color: blue;
+  cursor: pointer;
+  display: block;
+  align-self: center;
+  line-height: 1;
+  width: 200px;
+  height: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.homeBar {
+  border-color: blue;
+  color: white;
+  box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+  transition: all 200ms ease-in-out;
+}
+.homeBar:hover {
+  color: black;
+  width: 400px;
+  box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+}
+.homeBar:focus {
+  color: black;
+  width: 350px;
+  box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+}
+/*end menu BUTTONS class*/
+
+
+
+.btn_class {
+
+  text-align: center;
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid blue;
+  border-radius: 0.6em;
+  color: red;
+  cursor: default;
+  display: inline-block;
+  align-self: center;
+  
+  font-weight: 400;
+  line-height: 1;
+  width: 120px;
+  height: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.close_btn {
+  border-color: red;
+  color: white;
+  box-shadow: 0 0 40px 40px red inset, 0 0 0 0 red;
+  transition: all 200ms ease-in-out;
+}
+.close_btn:hover {
+  color: black;
+  box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+}
+
+
+.back_btn {
+  border-color: blue;
+  color: white;
+  box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+  transition: all 200ms ease-in-out;
+}
+.back_btn:hover {
+  color: black;
+  box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+}
+
+#close_ , #back_btn{
+    position: sticky;
+    left: 10px;
+    top: 95%;
+}
+
+
+/* Style the tab */
+.tab {
+	overflow: hidden;
+	border: 1px solid Black;
+	background-color: blue;
+	-webkit-border-radius: 10px;
+	width: 1310px;
+	border: 2px dashed #fff;
+	box-shadow: 0 0 0 4px #0038FF, 2px 1px 6px 4px rgba(0, 10, 10, 0.5);
+	text-shadow: -1px -1px #3044AA;
+}
+
+.stick{
+	position: sticky;
+	top: 119px;
+}
+/* Style the buttons inside the tab */
+.tab button {
+	background-color: inherit;
+	//float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	font-weight: bold;
+	color: white;
+	
+	
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: #B5CBFF;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: White;
+	color: blue;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	//border: 1px solid #ccc;
+	//border-top: none;
+}
+
+tr:nth-child(even) {
+  background-color: #e6e6ff;
+  }
+td {
+  font-size: 22px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: inherit; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

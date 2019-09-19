@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="../compiled/flipclock.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script src="../compiled/flipclock.js"></script>		
+	</head>
+	<style>
+	#date {
+		//position: absolute;
+		//left: 30px;
+		//top: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin-left: 25px;
+		padding: 0px;
+		width: 520px;
+		height: 40px;
+		text-align: center;
+		font-size: 36px;
+		font-family: "Piboto";
+		font-weight: bold;
+		color: #404040;
+		//background: red;
+	}
+	</style>
+	<body style="background: lightblue;" onload="date()">
+		<div id="date"></div>
+		<div class="clock" style="margin:2em;"></div>
+
+		<script type="text/javascript">
+			var clock;
+			
+			$(document).ready(function() {
+				clock = $('.clock').FlipClock({
+					clockFace: 'TwelveHourClock'
+				});
+			});
+			
+			function date() {
+				//date
+				var months = new Array(12);
+				months[0] = "January";
+				months[1] = "February";
+				months[2] = "March";
+				months[3] = "April";
+				months[4] = "May";
+				months[5] = "June";
+				months[6] = "July";
+				months[7] = "August";
+				months[8] = "September";
+				months[9] = "October";
+				months[10] = "November";
+				months[11] = "December";
+				
+				n =  new Date();
+				y = n.getFullYear();
+				m = n.getMonth();
+				
+				d = n.getDate();
+				$("#date").text(months[m] + " " + d + ", " + y);
+				var t = setTimeout(date, 10000);
+			}
+		</script>
+		
+	</body>
+</html>

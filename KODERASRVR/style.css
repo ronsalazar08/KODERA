@@ -1,0 +1,216 @@
+#mainBody{
+    background-color: lightBlue;
+    //height: 100%;
+    //overflow: hidden;
+    text-align: center;
+    
+}
+
+table{
+    width: 9.5%;
+    float: left;
+    text-align: center;
+    margin-left: 3px;
+    margin-right: 3px;
+    //border: none;
+    //border-spacing: 0;
+    border: 2px solid black;
+    border-radius: 0.6em
+}
+
+th{
+    color: yellow;
+    font-size: 24px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-family: "Piboto";
+    background-color: black;
+}
+
+td{
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Piboto";
+    //background-color: green;
+    border: 0px;
+    
+}
+
+iframe{
+
+    height: 74%;
+    width: 100%;
+}
+
+.fixed_header{
+    width: 9.5%;
+    table-layout: fixed;
+    border: solid 2px black;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: lightblue; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.fixed_header tbody{
+    display:block;
+    width: 100%;
+    overflow: auto;
+    height: 497px;
+    //border: solid 2px;
+    //border-collapse: collapse;
+}
+
+.fixed_header thead tr {
+   display: block;
+}
+
+.fixed_header thead {
+  //background: black;
+  //color:#fff;
+}
+
+.fixed_header th{
+  padding: 5px;
+  text-align: center;
+  width: 200px;
+  border: solid 2px blacki;
+    border-radius: 4px;
+}
+
+ .fixed_header td {
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    border-radius: 4px;
+}
+
+.fixed_header tr:nth-child(even) {
+  background-color: #e6e6ff;
+  }
+
+#stat{
+    border: 3px solid black;
+    border-radius: 0.6em;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Piboto";
+    width: 40%;
+    height: 6%
+}
+
+#last{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Piboto";
+    width: 30%;
+    height: 4%;
+}
+
+#inputBox{
+    display: block;
+    width: 400px;
+    //margin-left: auto;
+    //margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Piboto";
+    font-weight: bold;
+    //border: 3px solid Green;
+    -webkit-border-radius: 5px;
+    //position: absolute;
+    //bottom: 5px;
+    //left: 613px;
+}
+
+#note{
+    position: absolute;
+    text-align: left;
+    bottom: 115px;
+    left: 20px;
+}
+
+#clock {
+    position: absolute;
+    right: -165px;
+    bottom: -40px;
+    width: 560px;
+    height: 168px;
+    border: 0;
+    pointer-events: none;
+    transform:scale(0.4);
+   
+}
+
+#wos_home {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    
+}
+
+.btn_class {
+
+  text-align: center;
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid blue;
+  border-radius: 0.6em;
+  color: blue;
+  cursor: default;
+  display: inline-block;
+  align-self: center;
+  
+  font-weight: 400;
+  line-height: 1;
+  width: 120px;
+  height: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.home_btn {
+  border-color: blue;
+  color: white;
+  box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+  transition: all 200ms ease-in-out;
+}
+.home_btn:hover {
+  color: black;
+  box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+}
+
+
+
+#logo {
+    position:absolute;
+    bottom: 0px;
+    right: -230px;
+    width: 700px;
+    height: 200px;
+    background-image: url("YTL.png");
+    //opacity: .5;
+    transform:scale(0.3);
+}
